@@ -1,0 +1,54 @@
+/*flex will be the main display type used to style the webpage, including the justify-content, flex-flow and align-items features of flex to fine tune the layout*/
+
+/*The body of all pages wil have a column style flex layout with a dark background and yellow hightlighting trims for the theme.*/
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #0E0C0D;
+    color: #9CA3AF;
+    margin: 50px;
+    margin-bottom: 0;
+    font-family: Roboto;
+}
+
+/*the planned layout of the pages will be in pods for ease of understanding and designing the layout. pod1 will be the first pod within the body that will contain the logo at the top left of the page.*/
+.pod1{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width:100%;
+    margin: 0 auto;
+}
+
+/*pod2 will contain the navigation and content of the webpage. To align with the planned layout, this pod will use flex row, where the nav and the main content of the page will be side by side.*/
+.pod2{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width:100%;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+/*pod3 will contain the main content of all webpages. pod3 can be used multiple times to create seperate pods that can act as content dividers.*/
+.pod3{
+    display: flex;
+    border-radius: 65px;
+    border: 3px solid #FFEB00;
+	background-color: #1F2937;
+    width:90%;
+    justify-content: flex-start;
+	flex-direction: column;
+	align-items: left;
+    font-size: 22px;
+    margin-left: 40px;
+	margin:0 20px;
+	margin-bottom:10px;
+	padding:20px;
+}
+
+/*Heading for each pod3 on a page will have a yellow color and a defined margin to add space for presentation*/
+.pod3 h1 {
+	border-bottom: 5px solid #FFEB00;
+	margin: 30px;
+}
