@@ -89,3 +89,23 @@ body{
 	justify-content: center;
 	text-align: center;
 }
+
+/* further navigation adjustments, grey font and removed any a element formatting (underline) */
+a {
+	color: #9CA3AF;
+	text-decoration: none;
+}
+
+/* adjust behaviour of navigation list  when the pointer is over it */
+
+.nav ul li:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+
+/* Adjust what happens to the link text for navigation */
+.nav ul li:hover a{
+	cursor: pointer;
+	color: black;
+}
