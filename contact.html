@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- This html will have a similar layout with all pages to create a uniform look and feel -->
+<html lang="en">
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Blog - Marc B</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+            /* add a 60px margin to the sides of p nested in pod3 for layout purposes */
+            .pod3 p{
+            margin: 0 60px;
+            }
+            
+            /* adjust styling in form to column so they stack, center within the pod with a margin side of 20% for presentation */
+            form{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            margin:0 20%;
+            }
+            
+            /* Change the height of the textarea element to presentation */
+            textarea{
+            height:200px;
+            
+            }
+            
+            /* style the submit button to match the website theme */
+            .submit{
+            display: block;
+            margin: 35px auto;
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: #FFEB00;
+            self-align: center;
+            }			
+		</style>
+	</head>
+	<body>
+		<div class="pod1">
+			<div class="logo">
+				<p>LOGO</p>
+			</div>
+		</div>
+		
+		<div class="pod2">
+			<nav class="nav">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<!-- pod3 div for content, height specified using inline css as the content on this page will be added at a later date, to keep design layout -->    
+			<div class="pod3" style="width:100%;">
+				<h1>Contact Me</h1>
+				<p>Feel free to contact me about any questions via the form below, email directly or social media.</p><br>
+				
+				<!-- form element with 3 text input, 1 textarea and a submit button -->    
+				<form>
+					<label for="fname">First name:</label>
+					<input type="text" id="fname" name="fname"><br>
+					<label for="lname">Last name:</label>
+					<input type="text" id="lname" name="lname"><br>
+					<label for="email">Email address:</label>
+					<input type="email" id="email" name="email"><br>
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="msg"></textarea><br>
+					<input class="submit" type="submit" value="submit">
+				</form>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
