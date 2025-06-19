@@ -5,38 +5,79 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Contact - Marc B</title>
 		<link rel="stylesheet" href="style.css" />
-		<style>
-            /* add a 60px margin to the sides of p nested in pod3 for layout purposes */
-            .pod3 p{
-            margin: 0 60px;
-            }
-            
-            /* adjust styling in form to column so they stack, center within the pod with a margin side of 20% for presentation */
-            form{
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            margin:0 20%;
-            }
-            
-            /* Change the height of the textarea element to presentation */
-            textarea{
-            height:200px;
-            
-            }
-            
-            /* style the submit button to match the website theme */
-            .submit{
-            display: block;
-            margin: 35px auto;
-            width: 200px;
-            height: 50px;
-            border: none;
-            border-radius: 25px;
-            background-color: #FFEB00;
-            self-align: center;
-            }			
-		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		/* add a 60px margin to the sides of p nested in pod3 for layout purposes */
+		.pod3 p{
+		margin: 0 60px;
+		}
+		
+		/* adjust styling in form to column so they stack, center within the pod with a margin side of 20% for presentation */
+		form{
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		margin:0 20%;
+		}
+		
+		/* Change the height of the textarea element to presentation */
+		textarea{
+		height:200px;
+		
+		}
+		
+		/* style the submit button to match the website theme */
+		.submit{
+		display: block;
+		margin: 35px auto;
+		width: 200px;
+		height: 50px;
+		border: none;
+		border-radius: 25px;
+		background-color: #FFEB00;
+		self-align: center;
+		}
+		
+		/* The following 4 classes are the social media icons,  */
+		.fa{
+		padding: 20px;
+		font-size: 30px;
+		width: 40px;
+		text-align:center;
+		text-decoration:none;
+		margin: 5px 2px;
+		}
+		
+		.fa-facebook {
+		  background: #3B5998;
+		  color: white;
+		  border-radius:50px;
+		}
+		
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		  border-radius:50px;
+		}
+		
+		.fa-google {
+		  background: #dd4b39;
+		  color: white;
+		  border-radius:50px;
+		}
+		
+		.fa-linkedin {
+		  background: #007bb5;
+		  color: white;
+		  border-radius:50px;
+		}
+		/* To center the social media icons*/
+		.social {
+		display:flex;
+		justify-content:center;
+		}			
+	</style>
 	</head>
 	<body>
 		<div class="pod1">
@@ -56,26 +97,38 @@
 				<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-			
-			<!-- pod3 div for content, height specified using inline css as the content on this page will be added at a later date, to keep design layout -->    
-			<div class="pod3">
-				<h1>Contact Me</h1>
-				<p>Feel free to contact me about any questions via the form below, email directly or social media.</p><br>
-				
-				<!-- form element with 3 text input, 1 textarea and a submit button -->    
-				<form>
-					<label for="fname">First name:</label>
-					<input type="text" id="fname" name="fname"><br>
-					<label for="lname">Last name:</label>
-					<input type="text" id="lname" name="lname"><br>
-					<label for="email">Email address:</label>
-					<input type="email" id="email" name="email"><br>
-					<label for="msg">Message:</label>
-					<textarea id="msg" name="msg"></textarea><br>
-					<input class="submit" type="submit" value="submit">
-				</form>
-			</div>
-		</div>
+		
+			<!-- Article element used to provide the defaulted column display allowing the pod3 classess to stack -->
+			<article>
+				<div class="pod3">
+					<h1>Contact Me</h1>
+					<p>Feel free to contact me about any questions via the form below, email directly or social media.</p><br>
+					
+					<!-- User form to contact me, at the moment none usable -->
+					<form>
+						<label for="fname">First name:</label>
+						<input type="text" id="fname" name="fname"><br>
+						<label for="lname">Last name:</label>
+						<input type="text" id="lname" name="lname"><br>
+						<label for="email">Email address:</label>
+						<input type="email" id="email" name="email"><br>
+						<label for="msg">Message:</label>
+						<textarea id="msg" name="msg"></textarea><br>
+						<input class="submit" type="submit" value="submit">
+					</form>
+	
+				</div>
+				<!-- Social media icons in a new class pod3 -->
+				<div class="pod3">
+					<h2>Or connect with me through social</h2>
+					<div class="social">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-linkedin"></a>
+					</div>
+				</div>
+			</article>
 		</div>
 	</body>
 </html>
