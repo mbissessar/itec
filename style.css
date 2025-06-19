@@ -52,3 +52,40 @@ body{
 	border-bottom: 5px solid #FFEB00;
 	margin: 30px;
 }
+/* Logo area will be yellow for now, font size 32 and fixed size with possible plans to add my last name in text format or image. */
+.logo{
+	display: flex;
+	border-radius: 35px;
+	border: 3px solid #374151;
+	background-color: #FFEB00;
+	width: 200px;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+}
+
+/* Navigation font size 20px */
+.nav{
+	font-size: 20px;
+}
+/* navigation uses a unordered list, removed padding and fixed with the maintain the layout*/
+.nav ul {
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	width:200px;
+}
+
+/* uses each li element nested in nav class, to style the navigation buttons. Fixed height adjusted to create a round oval button */
+.nav ul li {
+	list-style-type: none;
+	border-radius: 20px;
+	border: 2px solid #374151;
+	height: 40px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
