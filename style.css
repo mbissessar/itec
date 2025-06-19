@@ -109,3 +109,9 @@ a {
 	cursor: pointer;
 	color: black;
 }
+
+/* any text that needs to be highlights will be assigned element mark for make text yellow to match theme */
+mark{
+	background-color: transparent;
+	color:#FFEB00;
+}
