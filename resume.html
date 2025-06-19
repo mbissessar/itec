@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- This html will have a similar layout with all pages to create a uniform look and feel -->
+<html lang="en">
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Resume - Marc B</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			/* add a 60px margin to the sides of p nested in pod3 for layout purposes */
+			.pod3 p{
+				margin: 0 60px;
+				margin-bottom:60px;
+				
+			}
+
+      /* style a element which will hold the button element from class resumedownload */
+			.pod3 a {
+			display: block;
+			margin: 35px auto;
+			width: 200px;
+			height: 50px;
+			border: none;
+			}
+			
+			/* resume style button */
+			.resumedownload{
+			display: block;
+			margin: 35px auto;
+			width: 200px;
+			height: 50px;
+			border: none;
+			border-radius: 25px;
+			background-color: #FFEB00;
+			self-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="pod1">
+		
+			<div class="logo">
+				<p>LOGO</p>
+			</div>
+		</div>
+		
+		<div class="pod2">
+			<nav class="nav">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>			
+			</nav>
+
+			<!-- pod3 div for content, height specified using inline css as the content on this page will be added at a later date, to keep design layout -->    
+			<div class="pod3" style="padding-bottom:50px;">
+				<h1>Resume</h1>
+					<p>Below is my most current resume. While my work experience does not 
+					directly associate with Information Technology, it highlights my <mark>leadership</mark>, <mark>business</mark> and <mark>people skills.</mark></p>
+				
+				<!-- use iframe to present pdf resume within pod3. specific height was used to increase visibility -->
+				<iframe src="resume.pdf" style="height:600px;" title="Marc's Resume"></iframe>
+
+				<!-- resume download using button element -->				
+				<a href="resume.pdf">
+				<button class="resumedownload">Download Resume</button>
+
+			</div>
+		</div>
+	</body>
+</html>
