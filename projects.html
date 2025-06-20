@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- This html will have a similar layout with all pages to create a uniform look and feel -->
+<html lang="en">
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Projects - Marc B</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			/* add a 60px margin to the sides of p nested in pod3 for layout purposes */
+			.pod3 p{
+				margin: 0 60px;
+			}
+			/* add space to the bottom of pod, low content */
+			.pod3{
+
+				padding-bottom:30%;
+			}
+			
+			/* https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+			Utilized the w3 schools example of gallery, kept most settings as it fit well with the layout, adjusted colors
+			*/
+			div.gallery {
+				margin: 30px;
+				border: none;
+				float: left;
+				width: 180px;
+			}
+
+			div.gallery:hover {
+				border: 1px solid #FFEB00;
+			}
+
+			div.gallery img {
+				width: 100%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pod1">
+			<div class="logo">
+				<p>LOGO</p>
+			</div>
+		</div>
+		
+		<div class="pod2">
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="pod3">
+				<h1>Past Projects (more to come!)</h1>
+				<div>
+					<!-- Each project on this page will have a thumbnail image and a description below it. <a> element wraps the internal contents of the gallery div so user can select the image and description in the class gallery container. target = "blank" is used for <a> only for parject 1 and 3, due to it being external link/file this will open in a new tab keep the current website open -->
+					<div class="gallery">
+						<a target="_blank" href="https://github.com/mbissessar/itec.git">
+						<img src="project1a.jpg" alt="Cinque Terre" width="600" height="400">
+						<div class="desc">Website Portfolio - Github Repository</div>
+						</a>
+					</div>
+
+					<div class="gallery">
+						<a href="project2a.png">
+						<img src="project2a.png" alt="Forest" width="600" height="400">
+						<div class="desc">Self Hosted - Proxmox Truenas NAS</div>
+						</a>
+					</div>
+					<!-- Due to limited projects, the third project is a placeholder -->
+					<div class="gallery">
+						<a target="_blank" href="project3.jpg">
+						<img src="project3.jpg" alt="Northern Lights" width="600" height="400">
+						<div class="desc">Project #3 - placeholder</div>
+						</a>
+					</div>
+				<div>				
+			</div>
+			</div>
+	</body>
+</html>
