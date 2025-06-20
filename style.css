@@ -34,7 +34,6 @@ body{
 .pod3{
     display: flex;
     border-radius: 65px;
-    border: 3px solid #FFEB00;
 	background-color: #1F2937;
     width:90%;
     justify-content: flex-start;
@@ -75,7 +74,7 @@ body{
 	padding: 0;
 	margin: 0;
 	justify-content: center;
-	width:200px;
+	width:150px;
 }
 
 /* uses each li element nested in nav class, to style the navigation buttons. Fixed height adjusted to create a round oval button */
@@ -117,7 +116,7 @@ mark{
 	color:#FFEB00;
 }
 
-/* footer will be the same at the bottom of all pages, with a dark white color border setup to display in column */
+/* footer will be the same at the bottom of all pages, with a dark white color border setup to display in column.*/
 footer{
     display: column-flex;
     flex-flow: row no wrap;
@@ -133,6 +132,12 @@ footer{
     align-items:center;
     justify-content: center;
     font-size: 16px;
+}
+
+/* when the user pointer hovers over the footer links, it will change the font to the website yellow theme. */
+footer a:hover{
+	cursor: pointer;
+	color: #FFEB00;
 }
 
 /* This is the first container that will hold my name to link to the index of the website. margin right to add space to the right of the element for layout */
