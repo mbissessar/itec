@@ -115,3 +115,51 @@ mark{
 	background-color: transparent;
 	color:#FFEB00;
 }
+
+/* footer will be the same at the bottom of all pages, with a dark white color border setup to display in column */
+footer{
+    display: column-flex;
+    flex-flow: row no wrap;
+    border-radius: 25px;
+    border-top: 3px solid #374151;
+    border-left: 3px solid #374151;
+    border-right: 3px solid #374151;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100px;
+    width: 70vw;
+    margin: 0 auto;
+    align-items:center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* This is the first container that will hold my name to link to the index of the website. margin right to add space to the right of the element for layout */
+.footrowhome{
+    margin-right: 60px;
+}
+
+/* This container is placed to the right of the footrowhome class, and will have various other links to the website, spaced evenly between and centered for layout */
+.footrow1 {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    align-items:center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+/* to add a border between the above 2 classes for design and layout */
+.footrow2 {
+    border: 1px solid #374151;
+    width: 100%;
+}
+
+/* Copyright mark centered in the middle */
+.footrow3 {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    font-size: 12px;
+}
