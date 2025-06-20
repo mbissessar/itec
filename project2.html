@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- This html will have a similar layout with all pages to create a uniform look and feel -->
+<html lang="en">
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Projects - Marc B</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+
+			/* add space to the bottom of pod, low content */
+			.pod3{
+
+				padding-bottom:30%;
+			}
+			
+			/* https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+			Utilized the w3 schools example of gallery, kept most settings as it fit well with the layout, adjusted colors
+			*/
+			div.gallery {
+				margin: 30px;
+				border: none;
+				float: left;
+				width: 180px;
+			}
+
+			div.gallery:hover {
+				border: 1px solid #FFEB00;
+			}
+
+			div.gallery img {
+				width: 100%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pod1">
+			<div class="logo">
+				<p>MARC B</p>
+			</div>
+		</div>
+		
+		<div class="pod2">
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="pod3">
+				<h1>Self Hosted Truenas on Proxmox</h1>
+				<article style="margin-left:5%; margin-right: 5%;">
+					<h2>The Problem - Storage</h2>
+					<p>The sizes of files (especially multimedia) are becoming larger, and similarly out multimedia memories and documents are forever growing, however reliable, accessible storage space are not getting cheaper in today's economy, if not it is getting more expensive and options for unlimited cloud storage are trending to become less popular as organization leverage consumers dependancies on storage.</p><br>
+					<p>The scope of this project will be to build an open source Network Attach Storage (NAS). This NAS will provide self hosted storage services locally with the option to expand into a self hosted cloud. This project will demonstrate the ability to use older computer hardware and put them to use to add free storage space for a home user.</p><br>
+					
+					<h2>The hardware: Dell Optiplex 7060</h2>
+					<ul>
+						<li>Intel Core i5-8500</li>
+						<li>16GB DDR4 RAM</li>
+						<li>256 NVMe SSD</li>
+						<li>500GB SSD</li>
+						<li>6 USB Port (4 USB 3.1)</li>
+					</ul>
+					
+					<img src="dell.jpg" alt="Dell Hardware for NAS" width="60%" height="auto">
+					
+					<h2>The Virtual Environment: Proxmox OS</h2>
+					<p>Proxmox is an open source virtual environment very popular in the open source community and will be used to virtualize TrueNas OS (More on this later) which will provide us the file serving features.</p>
+					
+					<p>For the scope of this project, virtulizing truenas helps with expandability and flexibility. 1 such example is intial deployment of a Truenas instance (VM) does not require a hard restart, this restart is virtualized in proxmox. The same can be said for any hardware devices Truenas sees, it is all virtualized and for the most part can be hot swapped.</p>
+					
+					<img src="project2b.png" alt="Proxmox OS Dashboard Screenshot" width="60%" height="auto">
+					
+					
+					
+				</article>
+			</div>
+		</div>
+		<footer>
+			<div class="footrow1">
+
+				<div class= "footrowhome">
+					<p>Marc Bissessar</p>
+				</div>
+				<div class= "footrowabout">
+					<p>About</p>
+				</div>
+				<div class= "footrowresume">
+					<p>Resume</p>
+				</div>
+				<div class= "footrowprojects">
+					<p>Projects</p>
+				</div>
+				<div class= "footrowblog">
+					<p>Contact</p>
+				</div>
+				<div class= "footrowcontact">
+					<p>Contact</p>
+				</div>
+			</div>
+
+			<div class="footrow2"></div>
+
+			<div class="footrow3">
+				<p>Marc Bissessar. All Rights Reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
