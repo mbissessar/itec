@@ -10,13 +10,13 @@
 		display: flex;
 		flex-direction:row;
 		border-radius: 65px;
-		border: 3px solid #FFEB00;
 		background-color: #1F2937;
 		justify-content: center;
 		align-items: center;
 		font-size: 22px;
 		margin-left: 40px;
 		margin:0 20px;
+		margin-bottom:5%;
 		padding:20px;
 		}
 		
@@ -51,53 +51,51 @@
 	<body>
 		<!--pod1 to contain the logo to the top left of the page-->
 		<div class="pod1">
-			<div class="logo">
-			<p>MARC B</p>
-			</div>
+			<a href="index.html">
+				<div class="logo">
+					<p>MARC B</p>
+				</div>
+			</a>
 		</div>
-		<!--container for the nav buttons in unorder list format, style references the nav class-->
+		<!--container for the nav buttons in unorder list format, style references the nav class. A tag wraps the li elements making the entire section a link.-->
 		<div class="pod2">
 			<nav class="nav">
 				<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<a href="index.html"><li>Home</li></a>
+				<a href="resume.html"><li>Resume</li></a>
+				<a href="projects.html"><li>Projects</li></a>
+				<a href="blog.html"><li>Blog</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="contact.html"><li>Contact</li></a>
 				</ul>
-			
-			<!-- welcome container that will have the welcome message and expected to have a different layout structure than pod3. -->    
 			</nav>
-			<div class="welcomecontainer" style="width:100%;">
+			<!-- welcome container that will have the welcome message and expected to have a different layout structure than pod3. -->
+			<div class="welcomecontainer">
 				<div class="hello">
 					<h1>HELLO.</h1>
 					<h2>My name is Marc Bissessar</h2>
 					<p class="intro">A tech-savvy, business-minded professional passionate about bridging the gap between operations and innovation. Whether it's optimizing supply chains or exploring how technology can drive smarter decisions, I bring a systems-thinking approach to everything I do. Thanks for stopping by — feel free to explore my work and connect!</p>
 				</div>
-				<img src="photomarc.jpg" alt="Photo of Marc">
+				<img src="photomarc.jpg" alt="Image of Marc">
 			</div>
 		</div>
 		<footer>
 			<div class="footrow1">
 
 				<div class= "footrowhome">
-					<p>Marc Bissessar</p>
+					<a href="index.html">Marc Bissessar</a>
 				</div>
 				<div class= "footrowabout">
-					<p>About</p>
+					<a href="about.html">About</a>
 				</div>
 				<div class= "footrowresume">
-					<p>Resume</p>
+					<a href="resume.html">Resume</a>
 				</div>
 				<div class= "footrowprojects">
-					<p>Projects</p>
+					<a href="projects.html">Projects</a>
 				</div>
 				<div class= "footrowblog">
-					<p>Contact</p>
-				</div>
-				<div class= "footrowcontact">
-					<p>Contact</p>
+					<a href="contact.html">Contact</a>
 				</div>
 			</div>
 
