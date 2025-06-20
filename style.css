@@ -52,12 +52,13 @@ body{
 	border-bottom: 5px solid #FFEB00;
 	margin: 30px;
 }
-/* Logo area will be yellow for now, font size 32 and fixed size with possible plans to add my last name in text format or image. */
+/* Logo area will be yellow text based with black text */
 .logo{
 	display: flex;
 	border-radius: 35px;
 	border: 3px solid #374151;
 	background-color: #FFEB00;
+	color: black;
 	width: 200px;
 	height: 100px;
 	justify-content: center;
