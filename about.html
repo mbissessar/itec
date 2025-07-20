@@ -25,28 +25,19 @@ This webpage has much more content, and utilizes several article elements to lay
 		</style>
 	</head>
 	<body>
-		<div class="pod1">
-			<a href="index.html">
-				<div class="logo">
-					<p>MARC B</p>
-				</div>
-			</a>
-		</div>
+	
+		<!-- Load javascript file that will contain the logo, navigation and footer content, as per deliverable of Assignment 2 part 3. -->
+		<script src="logo-nav-footer.js"></script>
+		
+		<!-- Div below with CSS style pod1 applied, and id "logo" which is used by javascript to insert the html code defined in the .js file -->
+		<div class="pod1" id="logo"></div>
 		
 		<div class="pod2">
-			<nav class="nav">
-				<ul>
-					<a href="index.html"><li>Home</li></a>
-					<a href="resume.html"><li>Resume</li></a>
-					<a href="projects.html"><li>Projects</li></a>
-					<a href="blog.html"><li>Blog</li></a>
-					<a href="about.html"><li>About</li></a>
-					<a href="contact.html"><li>Contact</li></a>
-					<a href="javascript:lightdark()"><li id="light-dark-button">Light Mode</li></a>
-				</ul>
-			</nav>
+
+		<!-- nav element with id "navi" which is used by javascript to insert navigation html code defined in the .js file -->
+		<nav class="nav" id="navi"></nav>
 			
-            <article>
+            	<article>
                 <div class="pod3" style="height:100%;">
                     <h1>About</h1>
                     <h2 style="font-size:32px;">Biography</h2>
