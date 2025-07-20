@@ -38,26 +38,16 @@
 		</style>
 	</head>
 	<body>
-		<div class="pod1">
-			<a href="index.html">
-				<div class="logo">
-					<p>MARC B</p>
-				</div>
-			</a>
-		</div>
+		<!-- Load javascript file that will contain the logo, navigation and footer content, as per deliverable of Assignment 2 part 3. -->
+		<script src="logo-nav-footer.js"></script>
+		
+		<!-- Div below with CSS style pod1 applied, and id "logo" which is used by javascript to insert the html code defined in the .js file -->
+		<div class="pod1" id="logo"></div>
 		
 		<div class="pod2">
-			<nav class="nav">
-				<ul>
-					<a href="index.html"><li>Home</li></a>
-					<a href="resume.html"><li>Resume</li></a>
-					<a href="projects.html"><li>Projects</li></a>
-					<a href="blog.html"><li>Blog</li></a>
-					<a href="about.html"><li>About</li></a>
-					<a href="contact.html"><li>Contact</li></a>
-					<a href="javascript:lightdark()"><li id="light-dark-button">Light Mode</li></a>
-				</ul>
-			</nav>
+
+			<!-- nav element with id "navi" which is used by javascript to insert navigation html code defined in the .js file -->
+			<nav class="nav" id="navi"></nav>
 
 			<!-- pod3 div for content, height specified using inline css as the content on this page will be added at a later date, to keep design layout -->    
 			<div class="pod3" style="padding-bottom:50px;">
@@ -74,32 +64,10 @@
 
 			</div>
 		</div>
-		<footer>
-			<div class="footrow1">
-
-				<div class= "footrowhome">
-					<a href="index.html">Marc Bissessar</a>
-				</div>
-				<div class= "footrowabout">
-					<a href="about.html">About</a>
-				</div>
-				<div class= "footrowresume">
-					<a href="resume.html">Resume</a>
-				</div>
-				<div class= "footrowprojects">
-					<a href="projects.html">Projects</a>
-				</div>
-				<div class= "footrowblog">
-					<a href="contact.html">Contact</a>
-				</div>
-			</div>
-
-			<div class="footrow2"></div>
-
-			<div class="footrow3">
-				<p>Marc Bissessar. All Rights Reserved</p>
-			</div>
-		</footer>
+		
+		<!-- javascript will use the id of the footer element to insert the footer content located in the .js file -->
+		<footer id="foot"></footer>
+		
 		<!-- 
 		Script below enables access the CSS classes and apply the light-mode class styles when the function is called. To keep light mode persistent through pages, we will need to store the current mode locally on the device and add a listner event for the script to apply the current mode of the file
 		-->
