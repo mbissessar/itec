@@ -1,0 +1,49 @@
+/* All light mode changes will be made under this style sheet on top of the original styles.css file. The webpage in default form is dark. */
+
+/* Change body attribute color and text on the page to match a light mode style, the background will be a off white color, text having greyish color. */
+.light-mode {
+	background-color: #F9FAFB;
+	color: #1F2937;
+}
+/* inverted yellow for light mode */
+.light-mode .logo {
+	background-color: #FFD60A;
+}
+/* light grey nav button colors in light mode */
+.light-mode .nav ul li {
+	border-color: #D1D5DB;
+}/* all links in light mode will have a dark grey text color */
+.light-mode a{
+	color: #1F2937;
+}
+/* Adjust what happens to the link text for navigation */
+.light-mode .nav ul li:hover {
+	cursor: pointer;
+	background-color: #E5E7EB;
+	color: black;
+}
+
+/* light mode footer, text links will have the inverted yellow on hover */
+.light-mode footer a:hover{
+	color: #FFD60A ;
+}
+
+/* light mode for pod3 which have main content */
+.light-mode .pod3{
+	background-color:#D6D3D1;
+}
+
+/* light mode pages that use mark attribute, an inverted yellow of dark */
+.light-mode .mark{
+	color:#FFD60A;
+}
+
+/* light mode for footer border */
+.light-mode footer{
+	border-color: #D1D5DB;
+}
+
+/* light mode border for div format in html document footer  */
+.light-mode .footrow2{
+	border-color: #D1D5DB;	
+}
