@@ -5,6 +5,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Projects - Marc B</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="lightstyle.css" /> <!--light mode style sheet-->
 		<style>
 			/* add a 60px margin to the sides of p nested in pod3 for layout purposes */
 			.pod3 p{
@@ -28,6 +29,11 @@
 
 			div.gallery:hover {
 				border: 1px solid #FFEB00;
+			}
+
+			/* light mode inverter yellow for when mouse over the gallery items. */
+			.light-mode div.gallery:hover {
+				border-color: #FFD60A;
 			}
 
 			div.gallery img {
@@ -59,6 +65,7 @@
 					<a href="blog.html"><li>Blog</li></a>
 					<a href="about.html"><li>About</li></a>
 					<a href="contact.html"><li>Contact</li></a>
+					<a href="javascript:lightdark()"><li id="light-dark-button">Light Mode</li></a>
 				</ul>
 			</nav>
 			<div class="pod3">
@@ -114,5 +121,35 @@
 				<p>Marc Bissessar. All Rights Reserved</p>
 			</div>
 		</footer>
+		<!-- 
+		Script below enables access the CSS classes and apply the light-mode class styles when the function is called. To keep light mode persistent through pages, we will need to store the current mode locally on the device and add a listner event for the script to apply the current mode of the file
+		-->
+		<script>
+			//Make javascript aware of the page current theme mode, variable lightActive will store a boolean value if light mode is active or not when the user clicks the html id light-dark-button. This will be used later on in the script
+			function lightdark() {
+				const lightActive = document.body.classList.toggle("light-mode");
+				// Update text in nav button to reflect the theme mode based on the boolean value of lightActive. If true, Dark mode text will display otherwise Light mode text.
+				if (lightActive) {
+					document.getElementById("light-dark-button").innerHTML = "Dark Mode";
+					//Session storage method is used to store on the local device "pagetheme" variable to be used as an indicator that the user prefers light mode or dark. This can be used to keep the page theme when going through pages. pagetheme will have light or dark values which will store for only the current session
+					sessionStorage.setItem("pagetheme", "light")
+				} else {
+					document.getElementById("light-dark-button").innerHTML = "Light Mode";
+					sessionStorage.setItem("pagetheme", "dark")
+				}
+			}
+
+			// An event listener that uses DOMContentLoaded to wait for the html code to load running a code that checks for a local session storage variable, pagetheme which may have the value "light". If the value "light" is stored, a specific snip of code will run; apply light-mode CSS styles to the page along with changeing the nav button text to "Dark Mode".
+			window.addEventListener("DOMContentLoaded", () => {
+				const savedtheme = sessionStorage.getItem("pagetheme");
+
+					if (savedtheme === "light") {
+						document.body.classList.add("light-mode");
+						//Change text to "Dark Mode" if the savedtheme variable contains "light"
+						document.getElementById("light-dark-button").innerHTML = "Dark Mode";
+					}
+				}
+			);
+		</script>
 	</body>
 </html>
