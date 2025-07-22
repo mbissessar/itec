@@ -1,27 +1,32 @@
 [
   {
+    "id": "1",
     "title": "Blog Post Test #1",
-    "description": "Testing blog description 1"
+    "description": "Testing blog description 1",
     "content": "This will be the content of the blog post #1"
   },
   {
+    "id": "2",
     "title": "Blog Post Test #2",
-    "description": "Testing blog description 2"
+    "description": "Testing blog description 2",
     "content": "This will be the content of the blog post #2"
   },
   {
+    "id": "3",
     "title": "Blog Post Test #3",
-    "description": "Testing blog description 3"
+    "description": "Testing blog description 3",
     "content": "This will be the content of the blog post #3"
   },
   {
+    "id": "4",
     "title": "Blog Post Test #4",
-    "description": "Testing blog description 4"
+    "description": "Testing blog description 4",
     "content": "This will be the content of the blog post #4"
   },
   {
+    "id": "5",
     "title": "Blog Post Test #5",
-    "description": "Testing blog description 5"
+    "description": "Testing blog description 5",
     "content": "This will be the content of the blog post #5"
   }
 ]
