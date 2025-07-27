@@ -33,6 +33,11 @@
 	background-color:#D6D3D1;
 }
 
+/* light mode for pod3 which have main content */
+.light-mode .blogpod{
+	background-color:#D6D3D1;
+}
+
 /* light mode pages that use mark attribute, an inverted yellow of dark */
 .light-mode .mark{
 	color:#FFD60A;
