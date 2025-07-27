@@ -81,10 +81,6 @@
 	</style>
 	</head>
 	<body>
-	
-		<!-- Load javascript file that will contain the logo, navigation and footer content, as per deliverable of Assignment 2 part 3. -->
-		<script src="logo-nav-footer.js"></script>
-		
 		<!-- Div below with CSS style pod1 applied, and id "logo" which is used by javascript to insert the html code defined in the .js file -->
 		<div class="pod1" id="logo"></div>
 		
@@ -146,17 +142,41 @@
 				}
 			}
 
-			// An event listener that uses DOMContentLoaded to wait for the html code to load running a code that checks for a local session storage variable, pagetheme which may have the value "light". If the value "light" is stored, a specific snip of code will run; apply light-mode CSS styles to the page along with changeing the nav button text to "Dark Mode".
-			window.addEventListener("DOMContentLoaded", () => {
+		// Event listner for DOM which will wait for the html document to load and then runs a fetch method to insert the header (logo and navigation) and the footer. It will then apply light mode to the elements based on the value of the sessionStorage pageTheme variable stored.
+		window.addEventListener("DOMContentLoaded", () => {
+		
+			// The promise all method was utilized from MDM webdocs, link below. This method ensures the logo, nav and footer is inserted into the document, before reading the sessionStorage pagetheme variable to determine if the page is in light mode. This helps maintain light mode if selected when navigating through the website. It orders the way the script is run, to ensure the html elements are in the document before applying a style.
+			//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+			Promise.all([
+				fetch('https://mbissessar.github.io/itec/footer.html')
+					.then(response => response.text())
+					.then(html => {
+						document.getElementById('foot').innerHTML = html;
+					}),
+
+				fetch('https://mbissessar.github.io/itec/logo.html')
+					.then(response => response.text())
+					.then(html => {
+						document.getElementById('logo').innerHTML = html;
+					}),
+
+				fetch('https://mbissessar.github.io/itec/nav.html')
+					.then(response => response.text())
+					.then(html => {
+						document.getElementById('navi').innerHTML = html;
+					})
+			])
+			.then(() => {
+				// With all html elements loaded above, check for the variable in sessionStorage called pagetheme, and apply the light theme is value light is found. If light is also found in the sessionStorage, the text will show dark mode in the nav a link style button.
 				const savedtheme = sessionStorage.getItem("pagetheme");
 
-					if (savedtheme === "light") {
-						document.body.classList.add("light-mode");
-						//Change text to "Dark Mode" if the savedtheme variable contains "light"
-						document.getElementById("light-dark-button").innerHTML = "Dark Mode";
-					}
+				if (savedtheme === "light") {
+					document.body.classList.add("light-mode");
+					const lightDarkButton = document.getElementById("light-dark-button");
+						lightDarkButton.innerHTML = "Dark Mode";
 				}
-			);
+			});
+		});
 		</script>
 	</body>
 </html>
