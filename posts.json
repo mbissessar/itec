@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Blog Post Test #1",
     "description": "Testing blog description 1",
-    "content": "This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1.</p><h1>Second Heading Testing</h1><p>Last paragraph."
+    "content": "<h2>This is Blog 1 Heading</h2><p>This is paragraph for blog 1.</p><h2>This is the second heading.</h2><p>This is the second paragraph for blog 1.</p>"
   },
   {
     "id": "2",
