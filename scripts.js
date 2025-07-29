@@ -66,9 +66,9 @@ function displayBlog(clickedPostId) {
 	selectedtitle.textContent = postContent.title;
 	singlePost.appendChild(selectedtitle);
 	
-	// variable to hold a p element for the content of the blog, getting content data from the postContent variable. Then variable is appended to singlePost.
+	// variable to hold a p element for the content of the blog, getting content data from the postContent variable. This uses the innerHTML method to input a string that the DOM can process the elements in the string. The variable then appended to singlePost.
 	const selectedContent = document.createElement('p');
-	selectedContent.textContent = postContent.content;
+	selectedContent.innerHTML = postContent.content;
 	singlePost.appendChild(selectedContent);
 	
 	// variable for the back button that will insert an <a> element with its respective labels and links at the bottom of the blog post, allowing the user to navigate back to the main blog page.
