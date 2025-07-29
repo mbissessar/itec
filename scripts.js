@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				//assign variables to elements that will update the html document. these variables will be used to pass the data onto the html file from the currently loaded post variable
 				const articleElement = document.createElement('article'); 
 				const blogTitle = document.createElement('h2');
-				const blogContent = document.createElement('p');
 				
 				//assigns the article element with the id for this specific forEach loop such as "id=1". post.id is taken from the json file for the specific loop.
 				articleElement.id = post.id;
@@ -31,11 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 				//store the data from the current post variable which will be in its respective html element container
 				blogTitle.textContent = post.title; 
-				blogContent.textContent = post.description; 
 
 				//inserts the 2 html elements h2 and p in the last position inside the article element.
 				articleElement.appendChild(blogTitle);
-				articleElement.appendChild(blogContent);
 
 				//inserts the article element including child elements to blogelement variable that is assigned to element with id=blogs in the html document.
 				blogElement.appendChild(articleElement); 
