@@ -1,32 +1,27 @@
 [
   {
     "id": "1",
-    "title": "Blog Post Test #1",
-    "description": "Testing blog description 1",
-    "content": "<h1>Implementing Light/Dark mode on portfolio website – Assignment #2</h1><p>The original theme of this website is dark, however there are times for the sake of accessibility that a website or application should have a light/dark mode switcher. The goal for this part of the assignment is to create a switcher accessible on any page on this website.</p><h2>What Colors will be used?</h2><p>Below the table details the main dark mode and light mode hex colors that will be implemented in the final product. These are not all element colors, but the main elements of the document.</p><h2>What method will be used to implement the switcher?</h2><p>All elements of this website (except for images), colors are defined by a separate CSS file; styles.css. Javascript will be used to change the class of most elements on this page from the dark theme to light and back. A separate CSS file with “.light-mode” defines the light-mode colors for elements. When Javascript is called, it will add .light-mode class to the body element. This method of switching effectively uses CSS descendants to apply the .light-mode class to all elements within it. Once the CSS class or ID light mode is defined, the element will get its change when javascript adds the light class to the body.</p><p>Another important feature that needs to be implemented when using this Javascript method, is a variable to inform the browser of the selected theme in the session. This enables the website to keep its theme as the user navigates the website. This is accomplished by using a Javascript API: sessionStorage to store a variable “pagetheme” with a value “light” or “dark”, to communicate the state the webpage theme is in. This variable will be read by an event listener DOM when the html page is fully loaded. An if statement then checks for the value “light” and applies the light mode css styles to the current document. The if statement in this use case is sufficient because the default theme is dark.</p><p>The light/dark option is located as the last item on the navigation panel list to the left of the page. This functions as a link that calls the function lightdark(), which toggles the light and dark mode on the page while also setting the sessionStorage variable, pagetheme to the current value. Another deliverable for this assignment, is changing the text of the button to light or dark mode to reflect the option when selected. This was included in an if else statement within the javascript function.</p><h2>Try it out!</h2>"
+    "title": "Implementing Light/Dark mode on portfolio website – Assignment #2",
+    "content": "<p>The original theme of this website is dark, however there are times for the sake of accessibility that a website or application should have a light/dark mode switcher. The goal for this part of the assignment is to create a switcher accessible on any page on this website.</p><h2>What Colors will be used?</h2><p>Below the table details the main dark mode and light mode hex colors that will be implemented in the final product. These are not all element colors, but the main elements of the document.</p><h2>What method will be used to implement the switcher?</h2><p>All elements of this website (except for images), colors are defined by a separate CSS file; styles.css. Javascript will be used to change the class of most elements on this page from the dark theme to light and back. A separate CSS file with “.light-mode” defines the light-mode colors for elements. When Javascript is called, it will add .light-mode class to the body element. This method of switching effectively uses CSS descendants to apply the .light-mode class to all elements within it. Once the CSS class or ID light mode is defined, the element will get its change when javascript adds the light class to the body.</p><p>Another important feature that needs to be implemented when using this Javascript method, is a variable to inform the browser of the selected theme in the session. This enables the website to keep its theme as the user navigates the website. This is accomplished by using a Javascript API: sessionStorage to store a variable “pagetheme” with a value “light” or “dark”, to communicate the state the webpage theme is in. This variable will be read by an event listener DOM when the html page is fully loaded. An if statement then checks for the value “light” and applies the light mode css styles to the current document. The if statement in this use case is sufficient because the default theme is dark.</p><p>The light/dark option is located as the last item on the navigation panel list to the left of the page. This functions as a link that calls the function lightdark(), which toggles the light and dark mode on the page while also setting the sessionStorage variable, pagetheme to the current value. Another deliverable for this assignment, is changing the text of the button to light or dark mode to reflect the option when selected. This was included in an if else statement within the javascript function.</p><h2>Try it out!</h2>"
   },
   {
     "id": "2",
     "title": "Blog Post Test #2",
-    "description": "Testing blog description 2",
     "content": "This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1"
   },
   {
     "id": "3",
     "title": "Blog Post Test #3",
-    "description": "Testing blog description 3",
     "content": "This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1"
   },
   {
     "id": "4",
     "title": "Blog Post Test #4",
-    "description": "Testing blog description 4",
     "content": "This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1"
   },
   {
     "id": "5",
     "title": "Blog Post Test #5",
-    "description": "Testing blog description 5",
     "content": "This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1. This will be the content of the blog post #1"
   }
 ]
