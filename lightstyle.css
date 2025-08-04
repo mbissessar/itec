@@ -23,6 +23,11 @@
 	color: black;
 }
 
+/* light mode on highlighted text in the content of document */
+.light-mode mark {
+	color: #FF8C00;
+}
+
 /* light mode footer, text links will have the inverted yellow on hover */
 .light-mode footer a:hover{
 	color: #FFD60A ;
