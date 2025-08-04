@@ -35,17 +35,17 @@
 
 /* light mode for pod3 which have main content */
 .light-mode .pod3{
-	background-color:#D6D3D1;
+	background-color: #D6D3D1;
 }
 
 /* light mode for pod3 which have main content */
 .light-mode .blogpod{
-	background-color:#D6D3D1;
+	background-color: #D6D3D1;
 }
 
 /* light mode pages that use mark attribute, an inverted yellow of dark */
 .light-mode .mark{
-	color:#FFD60A;
+	color: #9E6900;
 }
 
 /* light mode for footer border */
